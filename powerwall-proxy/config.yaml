@@ -1,0 +1,14 @@
+name: "Powerwall Proxy"
+version: "1.0.0"
+slug: "powerwall_proxy"
+description: "TCP proxy: LAN :443 -> Powerwall gateway 192.168.91.1:443"
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+init: false
+ports:
+  443/tcp: 443
+ports_description:
+  443/tcp: "Proxy to the Powerwall gateway"
